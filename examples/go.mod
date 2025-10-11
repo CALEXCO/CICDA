@@ -1,6 +1,6 @@
-module github.com/YOUR-USER-OR-ORG-NAME/YOUR-REPO-NAME
+module examples.CICDA/examples
 
-go 1.24.0
+go 1.25.1
 
 require (
 	google.golang.org/grpc v1.76.0
