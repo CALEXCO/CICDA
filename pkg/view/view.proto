@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "github.com/CALEXCO/CICDA/pkg/view";
+
+service view{
+    rpc CreateView (stream CreateViewRequest) returns (stream CreateViewReply) {}
+
+    rpc DeleteProject (stream CreateViewRequest) returns (stream CreateViewReply) {}
+
+    rpc UpdateProject (stream CreateViewRequest) returns (stream CreateViewReply) {}
+}
+
+message CreateViewRequest{
+    string type = 1;
+    repeated string permisions = 2;
+}
+
+message CreateViewReply{
+    int32 status = 1;
+}
