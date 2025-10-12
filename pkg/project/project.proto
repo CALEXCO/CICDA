@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option go_package = "github.com/CALEXCO/CICDA/pkg/project";
+
+service project{
+    rpc CreateProject (stream CreateProjectRequest) returns (stream CreateProjectReply) {}
+
+    rpc DeleteProject (stream CreateProjectRequest) returns (stream CreateProjectReply) {}
+
+    rpc UpdateProject (stream CreateProjectRequest) returns (stream CreateProjectReply) {}
+}
+
+message CreateProjectRequest{
+    string name = 1;
+    string type = 2;
+    string leader = 3;
+    repeated string microservices_teams = 4;
+    
+}
+
+message CreateProjectReply{
+    int32 status = 1;
+}
