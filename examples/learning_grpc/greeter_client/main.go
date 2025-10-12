@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	pb "examples.CICDA/examples/greeter_proto"
+	pb "github.com/CALEXCO/CICDA/examples/learning_grpc/greeter_proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
